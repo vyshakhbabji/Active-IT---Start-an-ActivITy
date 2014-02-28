@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios-like/ios-like.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/childbrowser.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/PushNotification.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        $(document).bind("mobileinit", function()
+        {
+            $.mobile.page.prototype.options.degradeInputs.date = true;
+        });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="b" data-add-back-btn="false" data-back-btn-text="Back">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-theme="b" name="mobileheader1"
+            id="startScreen_mobileheader1" class=' startScreen_mobileheader1 '>
+                <h1 dsid="mobileheader1">
+                    Active-IT
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="startScreen_mobilecontainer1" name="mobilecontainer1"
+            class=" startScreen_mobilecontainer1" dsid="mobilecontainer1" data-theme="b">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- mobilegrid_2 -->
+                <div class="startScreen_mobilegrid_2_wrapper">
+                    <table id="startScreen_mobilegrid_2" class=" startScreen_mobilegrid_2" dsid="mobilegrid_2"
+                    name="mobilegrid_2" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="startScreen_mobilegrid_2_row_0">
+                            <!-- mobilegridcell_3 -->
+                            <td id="startScreen_mobilegridcell_3" name="mobilegridcell_3" class="startScreen_mobilegridcell_3"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- NameLabel -->
+                                    <div name="NameLabel" id="startScreen_NameLabel" dsid="NameLabel" data-role="appery_label"
+                                    class=' startScreen_NameLabel '>
+                                        Name
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_4 -->
+                            <td id="startScreen_mobilegridcell_4" name="mobilegridcell_4" class="startScreen_mobilegridcell_4"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- nameTextField -->
+                                    <div data-role="fieldcontain" class="startScreen_nameTextField ">
+                                        <input type="text" name="nameTextField" dsid="nameTextField" value="" placeholder=""
+                                        id="startScreen_nameTextField" tabindex="1" data-theme="b" class=' startScreen_nameTextField '
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="startScreen_mobilegrid_2_row_1">
+                            <!-- mobilegridcell_5 -->
+                            <td id="startScreen_mobilegridcell_5" name="mobilegridcell_5" class="startScreen_mobilegridcell_5"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- phoneNumberLabel -->
+                                    <div name="phoneNumberLabel" id="startScreen_phoneNumberLabel" dsid="phoneNumberLabel"
+                                    data-role="appery_label" class=' startScreen_phoneNumberLabel '>
+                                        Phone Number
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_6 -->
+                            <td id="startScreen_mobilegridcell_6" name="mobilegridcell_6" class="startScreen_mobilegridcell_6"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- phoneNumberTextField -->
+                                    <div data-role="fieldcontain" class="startScreen_phoneNumberTextField ">
+                                        <input type="text" name="phoneNumberTextField" dsid="phoneNumberTextField" value=""
+                                        placeholder="" id="startScreen_phoneNumberTextField" tabindex="3" data-theme="b"
+                                        class=' startScreen_phoneNumberTextField ' />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_12 -->
+                <div class="startScreen_mobilegrid_12_wrapper">
+                    <table id="startScreen_mobilegrid_12" class=" startScreen_mobilegrid_12" dsid="mobilegrid_12"
+                    name="mobilegrid_12" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="startScreen_mobilegrid_12_row_0">
+                            <!-- mobilegridcell_13 -->
+                            <td id="startScreen_mobilegridcell_13" name="mobilegridcell_13" class="startScreen_mobilegridcell_13"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- passwordLabel -->
+                                    <div name="passwordLabel" id="startScreen_passwordLabel" dsid="passwordLabel" data-role="appery_label"
+                                    class=' startScreen_passwordLabel '>
+                                        Password
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_14 -->
+                            <td id="startScreen_mobilegridcell_14" name="mobilegridcell_14" class="startScreen_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- zipCodeTextField -->
+                                    <div data-role="fieldcontain" class="startScreen_zipCodeTextField ">
+                                        <input type="text" name="zipCodeTextField" dsid="zipCodeTextField" value="" placeholder=""
+                                        id="startScreen_zipCodeTextField" tabindex="18" data-theme="b" class=' startScreen_zipCodeTextField '
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="startScreen_mobilegrid_12_row_1">
+                            <!-- mobilegridcell_15 -->
+                            <td id="startScreen_mobilegridcell_15" name="mobilegridcell_15" class="startScreen_mobilegridcell_15"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- ActivitySwimmingLabel -->
+                                    <div name="ActivitySwimmingLabel" id="startScreen_ActivitySwimmingLabel" dsid="ActivitySwimmingLabel"
+                                    data-role="appery_label" class=' startScreen_ActivitySwimmingLabel '>
+                                        YouLikeSwimming
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_16 -->
+                            <td id="startScreen_mobilegridcell_16" name="mobilegridcell_16" class="startScreen_mobilegridcell_16"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- SwimmingTextField -->
+                                    <div data-role="fieldcontain" class="startScreen_SwimmingTextField ">
+                                        <input type="text" name="SwimmingTextField" dsid="SwimmingTextField" value="" placeholder=""
+                                        id="startScreen_SwimmingTextField" tabindex="15" data-theme="b" class=' startScreen_SwimmingTextField '
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_34 -->
+                <div class="startScreen_mobilegrid_34_wrapper">
+                    <table id="startScreen_mobilegrid_34" class=" startScreen_mobilegrid_34" dsid="mobilegrid_34"
+                    name="mobilegrid_34" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="startScreen_mobilegrid_34_row_0">
+                            <!-- mobilegridcell_35 -->
+                            <td id="startScreen_mobilegridcell_35" name="mobilegridcell_35" class="startScreen_mobilegridcell_35"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- YouLikeCyclingLabel -->
+                                    <div name="YouLikeCyclingLabel" id="startScreen_YouLikeCyclingLabel" dsid="YouLikeCyclingLabel"
+                                    data-role="appery_label" class=' startScreen_YouLikeCyclingLabel '>
+                                        YouLikeCycling
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_36 -->
+                            <td id="startScreen_mobilegridcell_36" name="mobilegridcell_36" class="startScreen_mobilegridcell_36"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- CycleTextField -->
+                                    <div data-role="fieldcontain" class="startScreen_CycleTextField ">
+                                        <input type="text" name="CycleTextField" dsid="CycleTextField" value="" placeholder=""
+                                        id="startScreen_CycleTextField" tabindex="16" data-theme="b" class=' startScreen_CycleTextField '
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="startScreen_mobilegrid_34_row_1">
+                            <!-- mobilegridcell_37 -->
+                            <td id="startScreen_mobilegridcell_37" name="mobilegridcell_37" class="startScreen_mobilegridcell_37"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- YouLikeRunningLabel -->
+                                    <div name="YouLikeRunningLabel" id="startScreen_YouLikeRunningLabel" dsid="YouLikeRunningLabel"
+                                    data-role="appery_label" class=' startScreen_YouLikeRunningLabel '>
+                                        YouLikeRunning
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_38 -->
+                            <td id="startScreen_mobilegridcell_38" name="mobilegridcell_38" class="startScreen_mobilegridcell_38"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- RunningTextField -->
+                                    <div data-role="fieldcontain" class="startScreen_RunningTextField ">
+                                        <input type="text" name="RunningTextField" dsid="RunningTextField" value="" placeholder=""
+                                        id="startScreen_RunningTextField" tabindex="17" data-theme="b" class=' startScreen_RunningTextField '
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- submitButton -->
+                <a data-role="button" name="submitButton" dsid="submitButton" class='  startScreen_submitButton'
+                id="startScreen_submitButton" data-corners="true" x-apple-data-detectors="false"
+                data-mini="true" data-theme="b" tabindex="6">
+                Submit
+                </a>
+                <!-- mobilegrid_27 -->
+                <div class="startScreen_mobilegrid_27_wrapper">
+                    <table id="startScreen_mobilegrid_27" class=" startScreen_mobilegrid_27" dsid="mobilegrid_27"
+                    name="mobilegrid_27" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="startScreen_mobilegrid_27_row_0">
+                            <!-- mobilegridcell_28 -->
+                            <td id="startScreen_mobilegridcell_28" name="mobilegridcell_28" class="startScreen_mobilegridcell_28"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- homePageButton -->
+                                    <a data-role="button" name="homePageButton" dsid="homePageButton" class='  startScreen_homePageButton'
+                                    id="startScreen_homePageButton" data-corners="true" x-apple-data-detectors="false"
+                                    data-inline="true" data-mini="true" data-theme="b" tabindex="7">
+                                    Home
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_29 -->
+                            <td id="startScreen_mobilegridcell_29" name="mobilegridcell_29" class="startScreen_mobilegridcell_29"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilebutton_26 -->
+                                    <a data-role="button" name="mobilebutton_26" dsid="mobilebutton_26" class='  startScreen_mobilebutton_26'
+                                    id="startScreen_mobilebutton_26" data-corners="true" x-apple-data-detectors="false"
+                                    data-inline="true" data-mini="true" data-theme="b" tabindex="8">
+                                    Reset
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="startScreen_mobilegrid_27_row_1">
+                            <!-- mobilegridcell_30 -->
+                            <td id="startScreen_mobilegridcell_30" name="mobilegridcell_30" class="startScreen_mobilegridcell_30"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_31 -->
+                            <td id="startScreen_mobilegridcell_31" name="mobilegridcell_31" class="startScreen_mobilegridcell_31"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class=" startScreen_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="startScreen_mobilefooter1" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

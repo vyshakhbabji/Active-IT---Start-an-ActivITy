@@ -1,0 +1,322 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.3.0/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer1 */
+.ui-content.startScreen_mobilecontainer1 {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilegrid_2 */
+.startScreen_mobilegrid_2 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.startScreen_mobilegrid_2 > tr > td {
+	vertical-align: top;
+}
+.startScreen_mobilegrid_2_row_0, .startScreen_mobilegrid_2_row_0 > td {
+	height: 30px
+}
+.startScreen_mobilegrid_2_row_1, .startScreen_mobilegrid_2_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_3 */
+.startScreen_mobilegridcell_3 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_3 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* NameLabel */
+.startScreen_NameLabel {
+	font-weight: normal; font-style: italic;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_4 */
+.startScreen_mobilegridcell_4 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_4 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* nameTextField */
+.startScreen_nameTextField {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_5 */
+.startScreen_mobilegridcell_5 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_5 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* phoneNumberLabel */
+.startScreen_phoneNumberLabel {
+	font-weight: normal; font-style: italic;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_6 */
+.startScreen_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* phoneNumberTextField */
+.startScreen_phoneNumberTextField {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegrid_12 */
+.startScreen_mobilegrid_12 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.startScreen_mobilegrid_12 > tr > td {
+	vertical-align: top;
+}
+.startScreen_mobilegrid_12_row_0, .startScreen_mobilegrid_12_row_0 > td {
+	height: 30px
+}
+.startScreen_mobilegrid_12_row_1, .startScreen_mobilegrid_12_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_13 */
+.startScreen_mobilegridcell_13 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* passwordLabel */
+.startScreen_passwordLabel {
+	font-weight: normal; font-style: italic;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_14 */
+.startScreen_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* zipCodeTextField */
+.startScreen_zipCodeTextField {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_15 */
+.startScreen_mobilegridcell_15 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_15 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* ActivitySwimmingLabel */
+.startScreen_ActivitySwimmingLabel {
+	font-weight: normal; font-style: italic;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_16 */
+.startScreen_mobilegridcell_16 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* SwimmingTextField */
+.startScreen_SwimmingTextField {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegrid_34 */
+.startScreen_mobilegrid_34 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.startScreen_mobilegrid_34 > tr > td {
+	vertical-align: top;
+}
+.startScreen_mobilegrid_34_row_0, .startScreen_mobilegrid_34_row_0 > td {
+	height: 30px
+}
+.startScreen_mobilegrid_34_row_1, .startScreen_mobilegrid_34_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_35 */
+.startScreen_mobilegridcell_35 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_35 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* YouLikeCyclingLabel */
+.startScreen_YouLikeCyclingLabel {
+	font-weight: normal; font-style: italic;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_36 */
+.startScreen_mobilegridcell_36 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_36 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* CycleTextField */
+.startScreen_CycleTextField {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_37 */
+.startScreen_mobilegridcell_37 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_37 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* YouLikeRunningLabel */
+.startScreen_YouLikeRunningLabel {
+	font-weight: normal; font-style: italic;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+}
+/* mobilegridcell_38 */
+.startScreen_mobilegridcell_38 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_38 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* RunningTextField */
+.startScreen_RunningTextField {
+	margin: 4px 0px 4px 0px;
+}
+/* submitButton */
+#startScreen_submitButton {
+
+}
+.ui-btn.startScreen_submitButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegrid_27 */
+.startScreen_mobilegrid_27 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.startScreen_mobilegrid_27 > tr > td {
+	vertical-align: top;
+}
+.startScreen_mobilegrid_27_row_0, .startScreen_mobilegrid_27_row_0 > td {
+	height: 30px
+}
+.startScreen_mobilegrid_27_row_1, .startScreen_mobilegrid_27_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_28 */
+.startScreen_mobilegridcell_28 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_28 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* homePageButton */
+#startScreen_homePageButton {
+
+}
+.ui-btn.startScreen_homePageButton {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_29 */
+.startScreen_mobilegridcell_29 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_29 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_26 */
+#startScreen_mobilebutton_26 {
+
+}
+.ui-btn.startScreen_mobilebutton_26 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_30 */
+.startScreen_mobilegridcell_30 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_30 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_31 */
+.startScreen_mobilegridcell_31 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_31 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilefooter1 */
+.startScreen_mobilefooter1 {
+	min-height:38px;
+}

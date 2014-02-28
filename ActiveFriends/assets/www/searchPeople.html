@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            searchPeople
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios-like/ios-like.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.3.0/jquery.mobile.structure-1.3.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.8.2.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.3.0/jquery.mobile-1.3.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <link href="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.css" rel="stylesheet"
+        type="text/css" />
+        <script type="text/javascript" src="files/resources/lib/datepicker/jQuery.ui.datepicker.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/datepicker/jquery.ui.datepicker.mobile.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/childbrowser.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/PushNotification.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        $(document).bind("mobileinit", function()
+        {
+            $.mobile.page.prototype.options.degradeInputs.date = true;
+        });
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="searchPeople" id="searchPeople"
+        class="type-interior" data-theme="b" data-add-back-btn="false" data-back-btn-text="Back">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-theme="b" name="mobileheader"
+            id="searchPeople_mobileheader" class=' searchPeople_mobileheader '>
+                <h1 dsid="mobileheader">
+                    Active-IT
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="searchPeople_mobilecontainer" name="mobilecontainer"
+            class=" searchPeople_mobilecontainer" dsid="mobilecontainer" data-theme="b">
+                <link href="searchPeople.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="searchPeople.js">
+                </script>
+                <!-- mobilelabel_5 -->
+                <div name="mobilelabel_5" id="searchPeople_mobilelabel_5" dsid="mobilelabel_5" data-role="appery_label"
+                class=' searchPeople_mobilelabel_5 '>
+                    What type of activity?
+                </div>
+                <!-- mobileradiogroup_27 -->
+                <div data-role="fieldcontain" class=" searchPeople_mobileradiogroup_27" id="searchPeople_mobileradiogroup_27"
+                dsid="mobileradiogroup_27">
+                    <fieldset data-role="controlgroup">
+                        <!-- radiogroup -->
+                        <span dsid="radiogroup" class="searchPeople_radiogroup" name="radiogroup">
+                            <input type="radio" name="mobileradiogroup_27" id="searchPeople_radiogroup" checked="checked"
+                            tabindex="10" data-theme="b" value="Running" />
+                            <label id="searchPeople_radiogroup_label" for="searchPeople_radiogroup">
+                                Running
+                            </label>
+                        </span>
+                        <!-- swimmingRadio -->
+                        <span dsid="swimmingRadio" class="searchPeople_swimmingRadio" name="swimmingRadio">
+                            <input type="radio" name="mobileradiogroup_27" id="searchPeople_swimmingRadio" data-theme="b"
+                            value="Swimming" />
+                            <label id="searchPeople_swimmingRadio_label" for="searchPeople_swimmingRadio">
+                                Swimming
+                            </label>
+                        </span>
+                        <!-- cyclingRadio -->
+                        <span dsid="cyclingRadio" class="searchPeople_cyclingRadio" name="cyclingRadio">
+                            <input type="radio" name="mobileradiogroup_27" id="searchPeople_cyclingRadio" data-theme="b"
+                            value="Cycling" />
+                            <label id="searchPeople_cyclingRadio_label" for="searchPeople_cyclingRadio">
+                                Cycling
+                            </label>
+                        </span>
+                    </fieldset>
+                </div>
+                <!-- mobilelabel_23 -->
+                <div name="mobilelabel_23" id="searchPeople_mobilelabel_23" dsid="mobilelabel_23"
+                data-role="appery_label" class=' searchPeople_mobilelabel_23 '>
+                    When do you want to do this?
+                </div>
+                <!-- eventDate -->
+                <div data-role="fieldcontain" id="searchPeople_eventDate" dsid="eventDate" name="eventDate"
+                tiggzitype="object" apperytype="object" apperyclass="datepicker" tiggziclass="datepicker"
+                data-theme="b" class=' searchPeople_eventDate '>
+                    <div class="datePickerControls">
+                        <a title="Open Date Picker" class="datepickeropenbutton ui-input-clear ui-btn ui-body ui-body-b
+                        ui-btn-up-b ui-btn-icon-notext ui-btn-corner-all ui-shadow" href="#" data-theme="b" style="margin-top:3px; vertical-align: middle; display: inline-block;">
+                        <span class="ui-btn-inner ui-btn-corner-all">
+                        <span class="ui-btn-text">Open Date Picker</span>
+                        <span class="ui-icon ui-icon-grid ui-icon-shadow"></span>
+                        </span>
+                        </a>
+                        <div class="inputContainer">
+                            <input type="text" data-theme="b" value="" tabindex="8" />
+                        </div>
+                    </div>
+                </div>
+                <!-- mobilelabel_25 -->
+                <div name="mobilelabel_25" id="searchPeople_mobilelabel_25" dsid="mobilelabel_25"
+                data-role="appery_label" class=' searchPeople_mobilelabel_25 '>
+                    Where are we doing this?
+                </div>
+                <!-- addressTextField -->
+                <div data-role="fieldcontain" class="searchPeople_addressTextField ">
+                    <input type="text" name="addressTextField" dsid="addressTextField" value="330 A St, San Diego, CA"
+                    placeholder="" id="searchPeople_addressTextField" tabindex="9" data-theme="b" class=' searchPeople_addressTextField '
+                    />
+                </div>
+                <!-- submitEventSearch -->
+                <a data-role="button" name="submitEventSearch" dsid="submitEventSearch" class='  searchPeople_submitEventSearch'
+                id="searchPeople_submitEventSearch" data-corners="true" x-apple-data-detectors="false"
+                data-mini="false" data-theme="b" tabindex="7">
+                Submit
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class=" searchPeople_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="searchPeople_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>
